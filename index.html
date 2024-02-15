@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang = "de">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="Bilder/CO2Fussabdruck.png" sizes="192x192">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <title>Footpring NGO</title>
+        <style>
+          .upArrow::after {
+            content: "\2191";
+            color: #FFFFFF;
+            text-shadow: 1px 1px 0px #000000;
+            position: absolute;
+           }
+           .dnArrow::after {
+            content: "\2193";
+            color: #FFFFFF;
+            text-shadow: 1px 1px 0px #000000;
+            position: absolute;
+           }
+           .float-left {
+              float: left;
+            }
+
+            .float-right {
+              float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="bg-dark text-light pt-4 pb-2" id="Globalnav">
+                <ul>
+                    <li class="d-inline m-4"><a href="index.html"><img src = "Bilder/CO2Fussabdruck.png" width="50vw"></a></li>
+                    <li class="d-inline m-4"><a href="Nav/about.html" class="text-white">Über uns</a></li>
+                    <li class="d-inline m-4"><a href="Nav/services.html" class="text-white">Unser Beitrag</a></li>
+                    <li class="d-inline m-4"><a href="Nav/contact.html" class="text-white">Kontakt</a></li>
+                  </ul>
+            </nav>
+        </header>
+
+        <main>
+            <nav id ="navbar">
+              <ul>
+                <li class="d-inline m-4"><a href="#Globalnav">Top</a></li><br><br>
+                <li class="d-inline m-4"><a href="#Infotext">Infotext</a></li><br><br>
+                <li class="d-inline m-4"><a href="#sortier-table">Emissionstabelle</a></li><br><br>
+                <li class="d-inline m-4"><a href="#Footer">Footer</a></li><br><br>
+              </ul>
+            </nav>
+            <section>
+                <h1 class="text-left w-75 m-auto"  id="Infotext">Footprint NGO</h1><br>
+                <div class="text-left m-auto w-75">Footprint NGO ist ein führendes Unternehmen im Bereich der nachhaltigen Technologie, das sich darauf spezialisiert hat, Organisationen dabei zu unterstützen, 
+                    ihren CO2-Fußabdruck zu reduzieren und einen positiven Beitrag zum Klimaschutz zu leisten.<br><br> Unsere innovativen Lösungen umfassen die Entwicklung und Implementierung maßgeschneiderter Strategien zur Messung, 
+                    Überwachung und Reduzierung von CO2-Emissionen. Wir arbeiten eng mit unseren Kunden zusammen, um umfassende Analysen durchzuführen, Schwachstellen zu identifizieren und effektive Maßnahmen zur Verringerung ihrer Umweltauswirkungen zu empfehlen.<br><br>
+                    Unser engagiertes Team von Experten verfügt über umfangreiche Erfahrung in den Bereichen Nachhaltigkeit, Energiemanagement und Umwelttechnik. Wir bieten nicht nur praktische Lösungen an, 
+                    sondern auch Schulungen, um das Bewusstsein für Umweltfragen zu schärfen und eine Kultur der Nachhaltigkeit zu fördern. <br><br>Bei Footprint NGO glauben wir fest daran, 
+                    dass jedes Unternehmen die Verantwortung hat, seinen Beitrag zum Schutz unseres Planeten zu leisten. Kontaktieren Sie uns noch heute, um zu erfahren, wie wir Ihnen helfen können, 
+                    Ihren CO2-Fußabdruck zu reduzieren und einen positiven Wandel für die Zukunft zu bewirken. Hier ist eine Liste mit denen zusammengearbeitet wird, um den CO2-Fußabdruck dieser in den nächsten Jahren zu senken.
+                </div><br>
+            </section>
+            <input type="text" id="myInput" onkeyup="suchen()" placeholder="Filtern.." class="d-flex w-75 m-auto" maxlength="30">
+            <table class="table table-bordered display-flex w-75 mx-auto" id="sortier-table">
+                <div class="row">
+                    <div class="col-lg–4 col-sm–12">
+                        <thead class="text-center">
+                        <tr>
+                            
+                            <th class="bg-dark text-white" date-type="string" title="Nach Land sortieren">Land</th>
+                            <th class="bg-dark text-white" date-type="string" title="Nach Unternehmen sortieren">Unternehmen</th>
+                            <th class="bg-dark text-white" data-type="number" title="Nach Emissionsmenge sortieren">Emissionsmenge (in Tonnen)</th>
+                        </tr>
+                        </thead>
+                    </div>
+                    <div class="col-lg–8 col-sm–12">
+                        <tbody>
+                        <tr>
+                            <td>Taiwan</td>
+                            <td class="text-center">Taiwan Holding Ltd.</td>
+                            <td class="text-end">300</td>
+                        </tr>
+                        <tr>
+                            <td>Indonesien</td>
+                            <td class="text-center">Indonesia Plated Ltd.</td>
+                            <td class="text-end">600</td>
+                        </tr>
+                        <tr>
+                            <td>Afghanistan</td>
+                            <td class="text-center">Afghi Nation United</td>
+                            <td class="text-end">100</td>
+                        </tr>
+                        <tr>
+                            <td>Italien</td>
+                            <td class="text-center">Bonucci Ball Ltd.</td>
+                            <td class="text-end">500</td>
+                        </tr>
+                        <tr>
+                            <td>China</td>
+                            <td class="text-center">Chinese Speaking Company Ltd.</td>
+                            <td class="text-end">10000</td>
+                        </tr>
+                        <tr>
+                            <td>Frankreich</td>
+                            <td class="text-center">Baguette Croissant Ltd.</td>
+                            <td class="text-end">490</td>
+                        </tr>
+                        <tr>
+                            <td>Deutschland</td>
+                            <td class="text-center">Halbe Sachen GmbH</td>
+                            <td class="text-end">1100</td>
+                        </tr>
+                        <tr>
+                            <td>Norwegen</td>
+                            <td class="text-center">Cold Place Ltd.</td>
+                            <td class="text-end">30</td>
+                        </tr>
+                        <tr>
+                            <td>Niederlande</td>
+                            <td class="text-center">Smoking Area Ltd.</td>
+                            <td class="text-end">200</td>
+                        </tr>
+                        <tr>
+                            <td>Türkei</td>
+                            <td class="text-center">Turkish Managemnt Aldi LTd.</td>
+                            <td class="text-end">400</td>
+                        </tr>
+                        <tr>
+                            <td>USA</td>
+                            <td class="text-center">XYZ Corporation</td>
+                            <td class="text-end">50000</td>
+                          </tr>
+                          <tr>
+                            <td>China</td>
+                            <td class="text-center">ABC Industries</td>
+                            <td class="text-end">72000</td>
+                          </tr>
+                          <tr>
+                            <td>Deutschland</td>
+                            <td class="text-center">GreenTech GmbH</td>
+                            <td class="text-end">3500</td>
+                          </tr>
+                          <tr>
+                            <td>Kanada</td>
+                            <td class="text-center">Northern Energy Limited</td>
+                            <td class="text-end">45000</td>
+                          </tr>
+                          <tr>
+                            <td>Indien</td>
+                            <td class="text-center">Sunshine Petrochemicals</td>
+                            <td class="text-end">62000</td>
+                          </tr>
+                          <tr>
+                            <td>Australien</td>
+                            <td class="text-center">BlueSky Mining</td>
+                            <td class="text-end">55000</td>
+                          </tr>
+                          <tr>
+                            <td>Brasilien</td>
+                            <td class="text-center">GreenForest Timber</td>
+                            <td class="text-end">28000</td>
+                          </tr>
+                          <tr>
+                            <td>Frankreich</td>
+                            <td class="text-center">Nouveau Énergie SA</td>
+                            <td class="text-end">39000</td>
+                          </tr>
+                          <tr>
+                            <td>Spanien</td>
+                            <td class="text-center">Marine Energy Solutions</td>
+                            <td class="text-end">41000</td>
+                          </tr>
+                          <tr>
+                            <td>Südkorea</td>
+                            <td class="text-center">Pacific Petrochemicals</td>
+                            <td class="text-end">58000</td>
+                          </tr>
+                          <tr>
+                            <td>Saudi-Arabien</td>
+                            <td class="text-center">Desert Power Corp</td>
+                            <td class="text-end">67000</td>
+                          </tr>
+                          <tr>
+                            <td>Russland</td>
+                            <td class="text-center">Arctic Oil & Gas</td>
+                            <td class="text-end">74000</td>
+                          </tr>
+                          <tr>
+                            <td>Iran</td>
+                            <td class="text-center">Persian Petrochemicals</td>
+                            <td class="text-end">51000</td>
+                          </tr>
+                          <tr>
+                            <td>Türkei</td>
+                            <td class="text-center">Anatolian Energy Ltd.</td>
+                            <td class="text-end">48000</td>
+                          </tr>
+                          <tr>
+                            <td>Mexiko</td>
+                            <td class="text-center">Latin Energy Solutions</td>
+                            <td class="text-end">62000</td>
+                          </tr>
+                          <tr>
+                            <td>Italien</td>
+                            <td class="text-center">Mediterranean Petrochem</td>
+                            <td class="text-end">44000</td>
+                          </tr>
+                          <tr>
+                            <td>Thailand</td>
+                            <td class="text-center">Tropical Energy Ltd.</td>
+                            <td class="text-end">54000</td>
+                          </tr>
+                          <tr>
+                            <td>Vereinigtes Königreich</td>
+                            <td class="text-center">Britannia Oil & Gas</td>
+                            <td class="text-end">70000</td>
+                          </tr>
+                          <tr>
+                            <td>Irak</td>
+                            <td class="text-center">Mesopotamia Petrochemicals</td>
+                            <td class="text-end">61000</td>
+                          </tr>
+                          <tr>
+                            <td>Ukraine</td>
+                            <td class="text-center">Black Sea Energy</td>
+                            <td class="text-end">49000</td>
+                          </tr>
+                          <tr>
+                            <td>Ägypten</td>
+                            <td class="text-center">Nile Petrochem Ltd.</td>
+                            <td class="text-end">58000</td>
+                          </tr>
+                          <tr>
+                            <td>Vietnam</td>
+                            <td class="text-center">Indochina Energy</td>
+                            <td class="text-end">56000</td>
+                          </tr>
+                          <tr>
+                            <td>Malaysia</td>
+                            <td class="text-center">Tropical Resources</td>
+                            <td class="text-end">42000</td>
+                          </tr>
+                          <tr>
+                            <td>Belgien</td>
+                            <td class="text-center">Brussels Energy Group</td>
+                            <td class="text-end">37000</td>
+                          </tr>
+                          <tr>
+                            <td>Griechenland</td>
+                            <td class="text-center">Aegean Petrochem Ltd.</td>
+                            <td class="text-end">47000</td>
+                          </tr>
+                          <tr>
+                            <td>Polen</td>
+                            <td class="text-center">Polish Energy Corp</td>
+                            <td class="text-end">52000</td>
+                          </tr>
+                          <tr>
+                            <td>Kasachstan</td>
+                            <td class="text-center">Central Asian Energy</td>
+                            <td class="text-end">53000</td>
+                          </tr>
+                          <tr>
+                            <td>Niederlande</td>
+                            <td class="text-center">Amsterdam Energy Ltd.</td>
+                            <td class="text-end">40000</td>
+                          </tr>
+                          <tr>
+                            <td>Argentinien</td>
+                            <td class="text-center">Pampas Energy</td>
+                            <td class="text-end">61000</td>
+                          </tr>
+                          <tr>
+                            <td>Algerien</td>
+                            <td class="text-center">Sahara Petrochemicals</td>
+                            <td class="text-end">55000</td>
+                          </tr>
+                          <tr>
+                            <td>Katar</td>
+                            <td class="text-center">Gulf Energy Corporation</td>
+                            <td class="text-end">66000</td>
+                          </tr>
+                          <tr>
+                            <td>Uzbekistan</td>
+                            <td class="text-center">Central Asian Petrochem</td>
+                            <td class="text-end">50000</td>
+                          </tr>
+                          <tr>
+                            <td>Philippinen</td>
+                            <td class="text-center">Manila Energy Solutions</td>
+                            <td class="text-end">58000</td>
+                          </tr>
+                          <tr>
+                            <td>Libyen</td>
+                            <td class="text-center">North African Oil</td>
+                            <td class="text-end">64000</td>
+                          </tr>
+                          <tr>
+                            <td>Libanon</td>
+                            <td class="text-center">Cedar Petrochemicals</td>
+                            <td class="text-end">48000</td>
+                          </tr>
+                          <tr>
+                            <td>Peru</td>
+                            <td class="text-center">Andean Energy Group</td>
+                            <td class="text-end">52000</td>
+                          </tr>
+                          <tr>
+                            <td>Neuseeland</td>
+                            <td class="text-center">Kiwi Power Ltd.</td>
+                            <td class="text-end">38000</td>
+                          </tr>
+                          <tr>
+                            <td>Irland</td>
+                            <td class="text-center">Celtic Energy Solutions</td>
+                            <td class="text-end">44000</td>
+                          </tr>
+                          <tr>
+                            <td>Österreich</td>
+                            <td class="text-center">Alpine Energy Corp</td>
+                            <td class="text-end">49000</td>
+                          </tr>
+                          <tr>
+                            <td>Rumänien</td>
+                            <td class="text-center">Transylvanian Petrochem</td>
+                            <td class="text-end">53000</td>
+                          </tr>
+                          <tr>
+                            <td>Portugal</td>
+                            <td class="text-center">Lusitanian Energy Ltd.</td>
+                            <td class="text-end">47000</td>
+                          </tr>
+                          <tr>
+                            <td>Schweden</td>
+                            <td class="text-center">Nordic Energy Solutions</td>
+                            <td class="text-end">50000</td>
+                          </tr>
+                          <tr>
+                            <td>Schweiz</td>
+                            <td class="text-center">Swiss Alpine Petrochem</td>
+                            <td class="text-end">52000</td>
+                          </tr>
+                          <tr>
+                            <td>Singapur</td>
+                            <td class="text-center">Merlion Energy Group</td>
+                            <td class="text-end">57000</td>
+                          </tr>
+                          <tr>
+                            <td>Norwegen</td>
+                            <td class="text-center">Fjord Energy Corporation</td>
+                            <td class="text-end">51000</td>
+                          </tr>
+                          <tr>
+                            <td>Äthiopien</td>
+                            <td class="text-center">Abyssinian Petrochemicals</td>
+                            <td class="text-end">46000</td>
+                          </tr>
+                          <tr>
+                            <td>Chile</td>
+                            <td class="text-center">Andes Energy Ltd.</td>
+                            <td class="text-end">55000</td>
+                          </tr>
+                          <tr>
+                            <td>Taiwan</td>
+                            <td class="text-center">Formosa Petrochemicals</td>
+                            <td class="text-end">54000</td>
+                          </tr>
+                          <tr>
+                            <td>Südafrika</td>
+                            <td class="text-center">African Energy Solutions</td>
+                            <td class="text-end">59000</td>
+                          </tr>
+                          <tr>
+                            <td>Hongkong</td>
+                            <td class="text-center">Dragon Energy Ltd.</td>
+                            <td class="text-end">58000</td>
+                          </tr>
+                          <tr>
+                            <td>Ungarn</td>
+                            <td class="text-center">Pannonian Energy Corp</td>
+                            <td class="text-end">48000</td>
+                          </tr>
+                          <tr>
+                            <td>Dänemark</td>
+                            <td class="text-center">Nordic Wind Energy</td>
+                            <td class="text-end">52000</td>
+                          </tr>
+                          <tr>
+                            <td>Finnland</td>
+                            <td class="text-center">Polar Energy Ltd.</td>
+                            <td class="text-end">51000</td>
+                          </tr>
+                          <tr>
+                            <td>Bangladesch</td>
+                            <td class="text-center">Bengal Energy Group</td>
+                            <td class="text-end">56000</td>
+                          </tr>
+                          <tr>
+                            <td>Kenia</td>
+                            <td class="text-center">Savannah Energy Group</td>
+                            <td class="text-end">45000</td>
+                          </tr>
+                          <tr>
+                            <td>Marokko</td>
+                            <td class="text-center">Atlas Petrochemicals</td>
+                            <td class="text-end">42000</td>
+                          </tr>
+                          <tr>
+                            <td>Japan</td>
+                            <td class="text-center">Rising Sun Energy</td>
+                            <td class="text-end">57000</td>
+                          </tr>
+                          <tr>
+                            <td>Slowenien</td>
+                            <td class="text-center">Adriatic Energy Corp</td>
+                            <td class="text-end">49000</td>
+                          </tr>
+                          <tr>
+                            <td>Costa Rica</td>
+                            <td class="text-center">Pura Vida Energy</td>
+                            <td class="text-end">48000</td>
+                          </tr>
+                          <tr>
+                            <td>Ecuador</td>
+                            <td class="text-center">Andean Petrochemicals</td>
+                            <td class="text-end">53000</td>
+                          </tr>
+                          <tr>
+                            <td>Tansania</td>
+                            <td class="text-center">Serengeti Energy Group</td>
+                            <td class="text-end">46000</td>
+                          </tr>
+                          <tr>
+                            <td>Jordanien</td>
+                            <td class="text-center">Desert Energy Solutions</td>
+                            <td class="text-end">51000</td>
+                          </tr>
+                          <tr>
+                            <td>Kolumbien</td>
+                            <td class="text-center">Amazon Energy Corp</td>
+                            <td class="text-end">55000</td>
+                          </tr>
+                          <tr>
+                            <td>Lesotho</td>
+                            <td class="text-center">Mountain Energy Ltd.</td>
+                            <td class="text-end">49000</td>
+                          </tr>
+                          <tr>
+                            <td>Nepal</td>
+                            <td class="text-center">Himalayan Energy Solutions</td>
+                            <td class="text-end">48000</td>
+                          </tr>
+                          <tr>
+                            <td>Madagaskar</td>
+                            <td class="text-center">Indian Ocean Petrochem</td>
+                            <td class="text-end">52000</td>
+                          </tr>
+                          <tr>
+                            <td>Malta</td>
+                            <td class="text-center">Mediterranean Energy Corp</td>
+                            <td class="text-end">47000</td>
+                          </tr>
+                          <tr>
+                            <td>Bolivien</td>
+                            <td class="text-center">Andean Resources Ltd.</td>
+                            <td class="text-end">50000</td>
+                          </tr>
+                          <tr>
+                            <td>Angola</td>
+                            <td class="text-center">Lusophone Energy Corp</td>
+                            <td class="text-end">54000</td>
+                          </tr>
+                          <tr>
+                            <td>Island</td>
+                            <td class="text-center">Arctic Energy Ltd.</td>
+                            <td class="text-end">56000</td>
+                          </tr>
+                          <tr>
+                            <td>Zypern</td>
+                            <td class="text-center">Mediterranean Petrochem</td>
+                            <td class="text-end">49000</td>
+                          </tr>
+                          <tr>
+                            <td>Barbados</td>
+                            <td class="text-center">Caribbean Energy Solutions</td>
+                            <td class="text-end">48000</td>
+                          </tr>
+                          <tr>
+                            <td>El Salvador</td>
+                            <td class="text-center">Central American Petrochem</td>
+                            <td class="text-end">51000</td>
+                          </tr>
+                          <tr>
+                            <td>Bhutan</td>
+                            <td class="text-center">Dragon Energy Group</td>
+                            <td class="text-end">47000</td>
+                          </tr>
+                        </tbody>
+                    </div>
+                </div>
+            </table>
+        </main>
+        <script>
+          const table = document.getElementById("sortier-table");
+          const headers = table.querySelectorAll("th");
+          const tableBody = table.querySelector("tbody");
+          const rows = tableBody.querySelectorAll("tr");
+          const directions = Array.from(headers).map(function(header) {
+           return "";
+          });
+          
+          const transform = function(index, content) {
+           const type = headers[index].getAttribute("data-type");
+           switch (type) {
+               case "number":
+            return parseFloat(content);
+               case "string":
+               default:
+            return content;
+           }
+          };
+          
+          const sortColumn = function(index, headers) {
+          
+           const cls = ["upArrow", "dnArrow"];
+           headers.forEach((header) => {
+            document.getElementById(header.id).classList.remove(...cls);
+           });
+          
+            const direction = directions[index] || "asc";
+            const multiplier = (direction === "asc") ? 1 : -1;
+            const cssSort = (direction === "asc") ? cls[0] : cls[1];
+            document.getElementById(index).classList.add(cssSort);
+          
+            const newRows = Array.from(rows);
+            newRows.sort((rowA, rowB) => {
+               const cellA = encodeURIComponent(rowA.querySelectorAll("td")[index].textContent.toLowerCase());
+               const cellB = encodeURIComponent(rowB.querySelectorAll("td")[index].textContent.toLowerCase());
+          
+               const a = transform(index, cellA);
+               const b = transform(index, cellB);
+          
+               switch (true) {
+                case a > b: return 1 * multiplier;
+                case a < b: return -1 * multiplier;
+                case a === b: return 0;
+                 }
+             });
+          
+             [].forEach.call(rows, function(row) {
+                 tableBody.removeChild(row);
+             });
+          
+             directions[index] = direction === "asc" ? "desc" : "asc";
+             newRows.forEach(function(newRow) {
+                 tableBody.appendChild(newRow);
+             });
+           };
+          
+          [].forEach.call(headers, function(header, index) {
+             header.setAttribute("id", index);
+             header.addEventListener("click", () => {
+                 sortColumn(index, headers);
+             });
+          });
+
+          function suchen() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("sortier-table");
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                } else {
+                  tr[i].style.display = "none";
+                }
+              }
+            }
+          }
+
+
+          if (document.documentElement.dir === 'rtl') {
+            document.getElementById("navbar").classList.add("float-right");
+          } else{
+            document.getElementById("navbar").classList.add("float-left");
+          }
+
+
+
+          </script>
+              <footer class="bg-dark text-light pt-4 pb-2" id="Footer">
+                <nav>
+                    <ul>
+                        <li class="d-inline m-4"><a href="Footer/privacy.html">Datenschutz</a></li>
+                        <li class="d-inline m-4"><a href="Footer/impressum.html">Impressum</a></li>
+                        <li class="d-inline m-4"><a href="Footer/AGB.html">AGBs</a></li>
+                    </ul>
+                </nav>
+            </footer>
+    </body>
+
+
+</html>
